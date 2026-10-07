@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Reelsomet</string>
+    <string name="accessibility_service_description">Reelsomet uses accessibility to automate Instagram posting. Enable this service to allow scheduled Reels publishing.</string>
+</resources>

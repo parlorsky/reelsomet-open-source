@@ -1,0 +1,26 @@
+package com.reelsomet.poster.automation.reddit
+
+enum class RedditState {
+    IDLE,
+    OPEN_REDDIT,
+    CLEAR_SYSTEM_DIALOGS,
+    STAGE_MEDIA,
+    OPEN_SUBMIT,
+    SELECT_POST_TYPE,
+    OPEN_MEDIA_PICKER,
+    SELECT_MEDIA,
+    APPLY_POST_TAGS,
+    FILL_TITLE,
+    SUBMIT_POST,
+    OPEN_POST,
+    SCAN_COMMENTS,
+    OPEN_COMMENT,
+    VERIFY_COMMENT,
+    OPEN_REPLY_COMPOSER,
+    FILL_REPLY,
+    SUBMIT_REPLY,
+    VERIFY_RESULT,
+    DONE,
+    FAILED,
+    NEEDS_ATTENTION
+}

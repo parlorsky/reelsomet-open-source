@@ -1,0 +1,23 @@
+package com.reelsomet.poster.automation.pinterest
+
+enum class PinterestState {
+    IDLE,
+    OPEN_PINTEREST,
+    CLEAR_SYSTEM_DIALOGS,
+    CHECK_LOGIN,
+    CHECK_MEDIA_PERMISSION,
+    ENSURE_BOARD_EXISTS,
+    CREATE_BOARD,
+    SET_BOARD_DESCRIPTION,
+    SELECT_MEDIA,
+    FILL_TITLE,
+    FILL_DESCRIPTION,
+    SKIP_LINK,
+    SELECT_BOARD,
+    PUBLISH,
+    VERIFY_RESULT,
+    DISCARD_DRAFT_ON_ABORT,
+    DONE,
+    FAILED,
+    NEEDS_ATTENTION
+}

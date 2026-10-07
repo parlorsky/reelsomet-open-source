@@ -1,0 +1,158 @@
+{
+  "instagram_version": "realme_2026",
+  "elements": {
+    "tab_home": {
+      "resourceId": "feed_tab",
+      "contentDescription": "Home"
+    },
+    "tab_profile": {
+      "resourceId": "profile_tab",
+      "contentDescription": "Profile"
+    },
+    "tab_create": {
+      "contentDescription": "Create New"
+    },
+    "create_menu_reel": {
+      "contentDescription": "Create new reel"
+    },
+    "create_menu_title": {
+      "resourceId": "title_text_view",
+      "text": "Create"
+    },
+    "username_display": {
+      "resourceId": "action_bar_large_title_auto_size"
+    },
+    "account_switcher": {
+      "resourceId": "action_bar_title_chevron"
+    },
+    "account_switcher_container": {
+      "resourceId": "action_bar_new_title_container"
+    },
+    "gallery_grid": {
+      "resourceId": "gallery_recycler_view"
+    },
+    "gallery_preview_button": {
+      "resourceId": "gallery_preview_button",
+      "contentDescription": "Gallery"
+    },
+    "gallery_item_first": {
+      "resourceId": "gallery_grid_item_thumbnail"
+    },
+    "gallery_title": {
+      "resourceId": "gallery_title_text"
+    },
+    "gallery_cancel": {
+      "resourceId": "gallery_cancel_button",
+      "contentDescription": "Back to Home"
+    },
+    "next_button": {
+      "resourceId": "clips_right_action_button",
+      "contentDescription": "Next",
+      "text": "Next",
+      "textRu": "Далее"
+    },
+    "cancel_button": {
+      "resourceId": "cancel_button",
+      "contentDescription": "Cancel"
+    },
+    "caption_field": {
+      "text": "Write a caption and add hashtags",
+      "textAlt": "Write a caption",
+      "textRu": "Добавьте подпись"
+    },
+    "share_button": {
+      "text": "Share",
+      "textRu": "Поделиться",
+      "resourceId": "share_button"
+    },
+    "share_screen_next": {
+      "resourceId": "share_button",
+      "contentDescription": "Next",
+      "text": "Next"
+    },
+    "about_reels_cancel": {
+      "resourceId": "clips_nux_sheet_cancel_button",
+      "contentDescription": "Cancel"
+    },
+    "save_draft_button": {
+      "resourceId": "save_draft_button",
+      "contentDescription": "Save draft"
+    },
+    "upload_status": {
+      "resourceId": "status_text"
+    },
+    "back_button": {
+      "resourceId": "action_bar_button_back",
+      "contentDescription": "Back"
+    },
+    "view_insights_button": {
+      "text": "View Insights",
+      "textAlt": "View insights",
+      "textRu": "Посмотреть статистику"
+    },
+    "profile_reels_tab": {
+      "contentDescription": "Reels",
+      "contentDescriptionAlt": "Reels tab",
+      "contentDescriptionRu": "Рилсы"
+    },
+    "tab_search": {
+      "resourceId": "search_tab",
+      "contentDescription": "Search and explore",
+      "contentDescriptionRu": "Поиск и интересное"
+    },
+    "search_input": {
+      "resourceId": "action_bar_search_edit_text"
+    },
+    "comment_button": {
+      "contentDescription": "Comment",
+      "contentDescriptionRu": "Комментировать"
+    },
+    "comment_input": {
+      "resourceId": "layout_comment_thread_edittext",
+      "text": "Add a comment…",
+      "textRu": "Добавьте комментарий…"
+    },
+    "comment_post_button": {
+      "resourceId": "layout_comment_thread_post_button_click_area",
+      "text": "Post",
+      "textRu": "Опубликовать"
+    },
+    "follow_button": {
+      "resourceId": "profile_header_follow_button",
+      "text": "Follow",
+      "textRu": "Подписаться"
+    },
+    "like_button": {
+      "contentDescription": "Like",
+      "contentDescriptionRu": "Нравится"
+    },
+    "share_icon": {
+      "contentDescription": "Share",
+      "contentDescriptionRu": "Поделиться"
+    },
+    "dismiss_texts": [
+      "Not Now",
+      "Не сейчас",
+      "OK",
+      "Skip",
+      "Пропустить",
+      "Dismiss",
+      "Got It",
+      "Say hello",
+      "Send message",
+      "Отправить сообщение"
+    ],
+    "error_texts": [
+      "Try Again",
+      "Повторить",
+      "Something went wrong",
+      "Что-то пошло не так"
+    ],
+    "action_blocked_texts": [
+      "Action Blocked",
+      "Действие заблокировано",
+      "Try again later",
+      "Повторите попытку позже"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeAllMask"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagDefault|flagReportViewIds|flagRetrieveInteractiveWindows|flagIncludeNotImportantViews"
+    android:canRetrieveWindowContent="true"
+    android:canPerformGestures="true"
+    android:canTakeScreenshot="true"
+    android:notificationTimeout="100"
+    android:packageNames="com.instagram.android,com.android.settings,com.google.android.packageinstaller,com.android.packageinstaller,com.google.android.permissioncontroller,com.android.permissioncontroller,com.android.vending,com.hihonor.android.internal.app,com.android.systemui,android"
+    android:description="@string/accessibility_service_description"
+    android:settingsActivity="com.reelsomet.poster.ui.MainActivity" />

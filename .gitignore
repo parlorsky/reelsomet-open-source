@@ -1,0 +1,36 @@
+# Credentials, local state and private media
+.env
+.env.*
+!.env.example
+config.yaml
+config.yml
+var/
+*.db
+*.db-*
+*.sqlite*
+*.pem
+*.key
+*.keystore
+*.jks
+*.log
+*.apk
+apk/
+# Tool/build output
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+node_modules/
+dist/
+build/
+.gradle/
+local.properties
+.DS_Store
+._*
+.idea/
+.vscode/

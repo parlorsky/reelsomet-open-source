@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1100" viewBox="0 0 1800 1100" role="img" aria-labelledby="title desc">
+<title id="title">Reelsomet: from content plan to Android execution</title>
+<desc id="desc">The Vue dashboard and optional Telegram integration control a FastAPI server. SQLite and the media library support the scheduler. A WebSocket device bridge sends commands to the Android router, Room task queue and Accessibility executor. State reports return to server logs and the dashboard.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#20232b"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#20232b}.title{font-family:Georgia,'Times New Roman',serif;font-size:52px}.panel{font-size:29px;font-weight:700}.name{font-size:26px;font-weight:600}.detail{font-size:20px;fill:#555c6c}.label{font-size:19px;fill:#555c6c}.small{font-size:17px;fill:#727887}</style>
+<rect width="1800" height="1100" fill="white"/>
+<text x="62" y="50" class="small" text-anchor="start">SYSTEM OVERVIEW  /  OPEN SOURCE</text>
+<text x="60" y="113" class="title" text-anchor="start">Reelsomet</text>
+<text x="1780" y="108" class="detail" text-anchor="end">Plan → Queue → Execute → Observe</text>
+<path d="M60 139 H1740" stroke="#d7dbe1"/>
+<rect x="60" y="178" width="970" height="772" rx="28" fill="#f6f7f9" stroke="#8b909b" stroke-width="2" stroke-dasharray="10 8"/>
+<rect x="1090" y="178" width="650" height="772" rx="28" fill="#f6f7f9" stroke="#8b909b" stroke-width="2" stroke-dasharray="10 8"/>
+<text x="88" y="220" class="panel" text-anchor="start">(a)  Server &amp; control plane</text>
+<text x="1118" y="220" class="panel" text-anchor="start">(b)  Android device</text>
+<rect x="98" y="268" width="274" height="93" rx="14" fill="#e9e5f4" stroke="#20232b" stroke-width="2"/>
+<text x="235.0" y="308.5" class="name" text-anchor="middle">Vue dashboard</text>
+<text x="235.0" y="340.5" class="detail" text-anchor="middle">operator interface</text>
+<rect x="444" y="268" width="240" height="93" rx="14" fill="#f8f4d8" stroke="#20232b" stroke-width="2"/>
+<text x="564.0" y="308.5" class="name" text-anchor="middle">FastAPI</text>
+<text x="564.0" y="340.5" class="detail" text-anchor="middle">REST + admin WS</text>
+<rect x="754" y="268" width="238" height="93" rx="14" fill="#f9e8d4" stroke="#20232b" stroke-width="2"/>
+<text x="873.0" y="308.5" class="name" text-anchor="middle">Telegram</text>
+<text x="873.0" y="340.5" class="detail" text-anchor="middle">optional interface</text>
+<path d="M372 315 L444 315" fill="none" stroke="#20232b" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<path d="M684 315 L754 315" fill="none" stroke="#20232b" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<path d="M564 361 L564 412 L259 412 L259 456" fill="none" stroke="#20232b" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<path d="M564 412 L586 412 L586 456" fill="none" stroke="#20232b" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<path d="M844 412 L564 412" fill="none" stroke="#20232b" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="124" y="456" width="270" height="123" rx="14" fill="#e2edf7" stroke="#20232b" stroke-width="2"/>
+<text x="259.0" y="511.5" class="name" text-anchor="middle">Media library</text>
+<text x="259.0" y="543.5" class="detail" text-anchor="middle">files + FFmpeg</text>
+<rect x="464" y="456" width="244" height="123" rx="14" fill="#e2edf7" stroke="#20232b" stroke-width="2"/>
+<text x="586.0" y="511.5" class="name" text-anchor="middle">SQLite</text>
+<text x="586.0" y="543.5" class="detail" text-anchor="middle">accounts · jobs · logs</text>
+<rect x="754" y="399" width="238" height="295" rx="14" fill="#e2edf7" stroke="#20232b" stroke-width="2"/>
+<text x="873" y="440" class="name" text-anchor="middle">Scheduler</text>
+<text x="873" y="470" class="detail" text-anchor="middle">per-account policy</text>
+<rect x="774" y="500" width="198" height="42" rx="5" fill="white" stroke="#8b909b" stroke-dasharray="5 4"/>
+<text x="791" y="527" class="label" text-anchor="middle">A</text>
+<rect x="810" y="509" width="31" height="24" rx="2" fill="#f2c9ca" stroke="#949ba7"/>
+<rect x="848" y="509" width="31" height="24" rx="2" fill="#f2c9ca" stroke="#949ba7"/>
+<rect x="886" y="509" width="31" height="24" rx="2" fill="#f2c9ca" stroke="#949ba7"/>
+<rect x="924" y="509" width="31" height="24" rx="2" fill="#f2c9ca" stroke="#949ba7"/>
+<rect x="774" y="557" width="198" height="42" rx="5" fill="white" stroke="#8b909b" stroke-dasharray="5 4"/>
+<text x="791" y="584" class="label" text-anchor="middle">B</text>
+<rect x="810" y="566" width="31" height="24" rx="2" fill="#cee1c0" stroke="#949ba7"/>
+<rect x="848" y="566" width="31" height="24" rx="2" fill="#cee1c0" stroke="#949ba7"/>
+<rect x="886" y="566" width="31" height="24" rx="2" fill="#cee1c0" stroke="#949ba7"/>
+<rect x="924" y="566" width="31" height="24" rx="2" fill="#cee1c0" stroke="#949ba7"/>
+<rect x="774" y="614" width="198" height="42" rx="5" fill="white" stroke="#8b909b" stroke-dasharray="5 4"/>
+<text x="791" y="641" class="label" text-anchor="middle">C</text>
+<rect x="810" y="623" width="31" height="24" rx="2" fill="#c7dbef" stroke="#949ba7"/>
+<rect x="848" y="623" width="31" height="24" rx="2" fill="#c7dbef" stroke="#949ba7"/>
+<rect x="886" y="623" width="31" height="24" rx="2" fill="#c7dbef" stroke="#949ba7"/>
+<rect x="924" y="623" width="31" height="24" rx="2" fill="#c7dbef" stroke="#949ba7"/>
+<path d="M394 540 L427 540 L427 651 L754 651" fill="none" stroke="#20232b" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M708 518 L754 518" fill="none" stroke="#20232b" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="576" y="641" class="label" text-anchor="middle">prepared media</text>
+<path d="M873 694 L873 751" fill="none" stroke="#20232b" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="747" y="751" width="251" height="99" rx="14" fill="#e2edf7" stroke="#20232b" stroke-width="2"/>
+<text x="872.5" y="794.5" class="name" text-anchor="middle">Device bridge</text>
+<text x="872.5" y="826.5" class="detail" text-anchor="middle">command IDs + acks</text>
+<rect x="1140" y="268" width="550" height="93" rx="14" fill="#e9e5f4" stroke="#20232b" stroke-width="2"/>
+<text x="1415.0" y="308.5" class="name" text-anchor="middle">MessageRouter</text>
+<text x="1415.0" y="340.5" class="detail" text-anchor="middle">WebSocket command dispatch</text>
+<path d="M998 800 L1060 800 L1060 315 L1140 315" fill="none" stroke="#20232b" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="0" y="0" transform="translate(1048 609) rotate(-90)" class="label" text-anchor="middle">WebSocket commands</text>
+<rect x="1193" y="412" width="444" height="84" rx="14" fill="#f8f4d8" stroke="#20232b" stroke-width="2"/>
+<text x="1415.0" y="448.0" class="name" text-anchor="middle">Room task queue</text>
+<text x="1415.0" y="480.0" class="detail" text-anchor="middle">persistent local jobs</text>
+<path d="M1415 361 L1415 412" fill="none" stroke="#20232b" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="1140" y="551" width="550" height="196" rx="14" fill="#e2edf7" stroke="#20232b" stroke-width="2"/>
+<text x="1415" y="593" class="name" text-anchor="middle">Accessibility executor</text>
+<rect x="1160" y="622" width="151" height="59" rx="14" fill="#f9e8d4" stroke="#20232b" stroke-width="2"/>
+<text x="1235.5" y="660.5" class="name" text-anchor="middle">Navigate</text>
+<path d="M1311 650 L1331 650" fill="none" stroke="#20232b" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="1331" y="622" width="151" height="59" rx="14" fill="#f9e8d4" stroke="#20232b" stroke-width="2"/>
+<text x="1406.5" y="660.5" class="name" text-anchor="middle">Compose</text>
+<path d="M1482 650 L1502 650" fill="none" stroke="#20232b" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="1502" y="622" width="151" height="59" rx="14" fill="#f9e8d4" stroke="#20232b" stroke-width="2"/>
+<text x="1577.5" y="660.5" class="name" text-anchor="middle">Publish</text>
+<text x="1415" y="722" class="detail" text-anchor="middle">app-specific UI flows + state checks</text>
+<path d="M1415 496 L1415 551" fill="none" stroke="#20232b" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="1193" y="805" width="444" height="74" rx="14" fill="#e9e5f4" stroke="#20232b" stroke-width="2"/>
+<text x="1415.0" y="851.0" class="name" text-anchor="middle">StateReporter</text>
+<path d="M1415 747 L1415 805" fill="none" stroke="#20232b" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="1415" y="918" class="small" text-anchor="middle">Android apps: Instagram · Pinterest · Reddit</text>
+<rect x="124" y="759" width="289" height="91" rx="14" fill="#e5efdf" stroke="#20232b" stroke-width="2"/>
+<text x="268.5" y="798.5" class="name" text-anchor="middle">Logs &amp; insights</text>
+<text x="268.5" y="830.5" class="detail" text-anchor="middle">results · device status</text>
+<path d="M1193 848 L1056 848 L1056 904 L269 904 L269 850" fill="none" stroke="#20232b" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="738" y="893" class="label" text-anchor="middle">WebSocket events / status &amp; results</text>
+<path d="M124 804 L87 804 L87 387 L235 387 L235 361" fill="none" stroke="#20232b" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow)" stroke-dasharray="7 6"/>
+<text x="144" y="698" class="label" text-anchor="start">observable feedback</text>
+<text x="60" y="1010" class="detail" text-anchor="start">Figure 1.  A self-hosted publishing loop with explicit server–device boundaries.</text>
+<text x="60" y="1045" class="small" text-anchor="start">Solid arrows: data &amp; commands. Dashed arrow: dashboard updates. Queues A–C illustrate per-account work.</text>
+<text x="60" y="1073" class="small" text-anchor="start">Conceptual architecture mapped to the source; optional integrations and experimental workflows are documented separately.</text>
+</svg>

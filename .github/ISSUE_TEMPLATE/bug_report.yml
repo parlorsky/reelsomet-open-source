@@ -1,0 +1,20 @@
+name: Bug report
+description: Report a reproducible problem
+body:
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What happened?
+      description: Include reproduction steps and expected behavior. Remove private data.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Commit, OS, Python/Node versions; for device issues, phone model, Android and target-app version.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs
+      render: text

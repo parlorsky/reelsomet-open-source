@@ -1,0 +1,227 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-primary: 247 248 250;
+    --bg-secondary: 255 255 255;
+    --bg-tertiary: 241 243 246;
+    --bg-elevated: 255 255 255;
+    --bg-hover: 236 238 242;
+    --border-subtle: 238 240 244;
+    --border-default: 228 231 236;
+    --border-strong: 203 208 216;
+    --text-primary: 17 24 39;
+    --text-secondary: 71 85 105;
+    --text-muted: 148 163 184;
+    --text-inverted: 255 255 255;
+    --accent: 2 132 199;
+    --accent-hover: 3 105 161;
+    --accent-muted: 224 242 254;
+    --accent-fg: 255 255 255;
+    --success: 22 163 74;
+    --success-muted: 220 252 231;
+    --warning: 217 119 6;
+    --warning-muted: 254 243 199;
+    --danger: 220 38 38;
+    --danger-muted: 254 226 226;
+    --info: 8 145 178;
+    --info-muted: 207 250 254;
+    --ring: 2 132 199;
+    --shadow-color: 15 23 42;
+    color-scheme: light;
+  }
+
+  .dark {
+    --bg-primary: 9 9 11;
+    --bg-secondary: 17 17 20;
+    --bg-tertiary: 27 27 31;
+    --bg-elevated: 24 24 28;
+    --bg-hover: 32 32 37;
+    --border-subtle: 27 27 31;
+    --border-default: 39 39 42;
+    --border-strong: 63 63 70;
+    --text-primary: 250 250 250;
+    --text-secondary: 161 161 170;
+    --text-muted: 113 113 122;
+    --text-inverted: 9 9 11;
+    --accent: 56 189 248;
+    --accent-hover: 125 211 252;
+    --accent-muted: 12 74 110;
+    --accent-fg: 9 9 11;
+    --success: 74 222 128;
+    --success-muted: 20 83 45;
+    --warning: 251 146 60;
+    --warning-muted: 124 45 18;
+    --danger: 248 113 113;
+    --danger-muted: 127 29 29;
+    --info: 34 211 238;
+    --info-muted: 22 78 99;
+    --ring: 56 189 248;
+    --shadow-color: 0 0 0;
+    color-scheme: dark;
+  }
+
+  *,
+  *::before,
+  *::after {
+    @apply border-border-default;
+  }
+
+  html {
+    @apply font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply min-h-screen bg-bg-primary text-text-primary;
+    font-feature-settings: 'cv11', 'ss01', 'ss03';
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold text-text-primary;
+    letter-spacing: 0;
+  }
+
+  :focus-visible {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px rgb(var(--bg-primary)), 0 0 0 4px rgb(var(--ring) / .55);
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background: rgb(var(--border-default));
+    background-clip: padding-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--border-strong));
+    background-clip: padding-box;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex min-h-10 items-center justify-center gap-2 rounded-lg border border-accent bg-accent px-4 py-2 text-sm font-semibold text-accent-fg transition-colors hover:bg-accent-hover disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-secondary {
+    @apply inline-flex min-h-10 items-center justify-center gap-2 rounded-lg border border-border-default bg-bg-elevated px-4 py-2 text-sm font-semibold text-text-primary transition-colors hover:bg-bg-hover disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-danger {
+    @apply inline-flex min-h-10 items-center justify-center gap-2 rounded-lg border border-danger bg-danger px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-danger/90 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-sm {
+    @apply min-h-9 px-3 py-1.5 text-sm;
+  }
+
+  .icon-button {
+    @apply inline-flex h-9 w-9 items-center justify-center rounded-lg text-text-secondary transition-colors hover:bg-bg-hover hover:text-text-primary;
+  }
+
+  .input-field {
+    @apply w-full rounded-lg border border-border-default bg-bg-primary px-3 py-2 text-sm text-text-primary transition-colors placeholder:text-text-muted focus:border-accent focus:outline-none;
+  }
+
+  .select-field {
+    @apply rounded-lg border border-border-default bg-bg-primary px-3 py-2 text-sm text-text-primary transition-colors focus:border-accent focus:outline-none;
+  }
+
+  .card {
+    @apply rounded-lg border border-border-default bg-bg-secondary p-4 shadow-soft-sm;
+  }
+
+  .table-row-hover {
+    @apply transition-colors hover:bg-bg-hover;
+  }
+
+  .surface-panel {
+    @apply overflow-hidden rounded-lg border border-border-default bg-bg-secondary shadow-soft-sm;
+  }
+
+  .table-head {
+    @apply border-b border-border-subtle bg-bg-tertiary text-xs font-semibold uppercase text-text-muted;
+  }
+
+  .metric-card {
+    @apply rounded-lg border border-border-default bg-bg-secondary p-4 shadow-soft-sm;
+  }
+
+  .page-header {
+    @apply mb-5 flex flex-col gap-3 border-b border-border-subtle pb-4 md:flex-row md:items-end md:justify-between;
+  }
+
+  .page-eyebrow {
+    @apply mb-1 text-xs font-bold uppercase tracking-wide text-text-muted;
+  }
+
+  .page-title {
+    @apply truncate text-2xl font-semibold leading-tight;
+  }
+
+  .section-heading {
+    @apply mb-4 flex flex-col gap-3 border-b border-border-subtle pb-3 sm:flex-row sm:items-start sm:justify-between;
+  }
+
+  .inspector-panel {
+    @apply sticky top-20 max-h-[calc(100vh-7rem)] w-full shrink-0 overflow-y-auto rounded-lg border border-border-default bg-bg-secondary shadow-soft-sm lg:w-96;
+  }
+
+  .toolbar {
+    @apply flex flex-col gap-3 rounded-lg border border-border-default bg-bg-secondary p-3 shadow-soft-sm lg:flex-row lg:items-center lg:justify-between;
+  }
+
+  .filter-row {
+    @apply flex flex-1 flex-wrap items-center gap-2;
+  }
+
+  .split-workspace {
+    @apply grid grid-cols-1 gap-4 xl:grid-cols-[minmax(0,1fr)_24rem];
+  }
+
+  .rail-workspace {
+    @apply grid grid-cols-1 gap-4 xl:grid-cols-[17rem_minmax(0,1fr)_24rem];
+  }
+
+  .meta-grid {
+    @apply grid grid-cols-2 gap-2 text-xs;
+  }
+
+  .meta-cell {
+    @apply rounded-lg bg-bg-tertiary px-3 py-2;
+  }
+
+  .meta-label {
+    @apply block text-[11px] font-medium uppercase text-text-muted;
+  }
+
+  .meta-value {
+    @apply mt-1 block truncate text-sm font-semibold text-text-primary;
+  }
+}

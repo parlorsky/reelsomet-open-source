@@ -1,0 +1,24 @@
+# Documentation only. The server generates private credentials on first start.
+server:
+  host: 127.0.0.1
+  port: 8000
+  domain: ""
+database:
+  path: var/data/db/farm.db
+data_dir: var/data
+static_dir: web/dist
+farm:
+  timezone: UTC
+  use_scenarios_default: false
+  max_posts_per_account_per_day: 5
+  max_auto_retries: 3
+ghost:
+  enabled: false
+# Set optional integrations in the authenticated Settings screen.
+telegram:
+  bot_token: ""
+  admin_chat_ids: []
+llm:
+  base_url: ""
+  api_key: ""
+  model: ""

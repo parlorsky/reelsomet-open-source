@@ -1,0 +1,48 @@
+[project]
+name = "reelsomet"
+version = "0.1.0"
+readme = "README.md"
+license = "MIT"
+authors = [{name = "Reelsomet contributors"}]
+description = "Self-hosted publishing orchestration for Android devices"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi==0.142.2",
+    "uvicorn[standard]==0.34.0",
+    "websockets==14.1",
+    "python-telegram-bot==22.4",
+    "sqlalchemy[asyncio]==2.0.36",
+    "apscheduler==3.10.4",
+    "pyyaml==6.0.2",
+    "httpx==0.28.1",
+    "python-multipart==0.0.31",
+    "pyjwt==2.15.0",
+    "bcrypt==4.2.1",
+    "aiosqlite==0.20.0",
+    "pillow>=11.3.0,<13",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.0.3",
+    "pytest-asyncio==1.4.0",
+    "httpx",  # for FastAPI TestClient
+    "ruff==0.8.6",
+]
+
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["server*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 120
