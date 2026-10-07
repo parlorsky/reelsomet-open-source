@@ -35,7 +35,7 @@ python -m pip_audit -r requirements.lock
 gitleaks git . --redact
 ```
 
-Dependencies are pinned for Python and locked in `web/package-lock.json`. The GitHub workflow builds the server tests, web UI, Android app and container. See the workflow result for the actual revision tested.
+Python runtime dependencies are resolved with hashes in `requirements.lock`; frontend dependencies are locked in `web/package-lock.json`. The GitHub workflow builds the server tests, web UI, Android app and container. See the workflow result for the actual revision tested.
 
 ## Local data
 
