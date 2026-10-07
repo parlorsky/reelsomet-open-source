@@ -107,7 +107,7 @@ data/fsm/           Versioned workflow definitions; no user content
 tests/              Backend and protocol regression tests
 examples/           Small reusable client examples
 docs/               Architecture, deployment, development and release status
-scripts/            Figure regeneration and repository checks
+scripts/            Figure regeneration
 ```
 
 ## Development & contributing
