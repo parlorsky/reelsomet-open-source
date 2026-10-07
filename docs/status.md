@@ -2,6 +2,17 @@
 
 Version 0.1.0 is an **experimental source release**, intended for inspection, self-hosted evaluation and reuse. The repository's CI is the revision-specific record of automated validation.
 
+## Validation on 2026-10-07
+
+- Clean Python 3.12 environment installed from `requirements-dev.lock`: **872 passed, 3 module skips, 2 strict expected failures**.
+- Vue/TypeScript production build: passed; npm audit reported no known vulnerabilities.
+- Android JDK 17 build and unit tests in GitHub Actions: passed; a debug APK was produced.
+- Docker image build and live HTTP health/first-run checks in GitHub Actions: passed.
+- Runtime and development Python lock-file audits: no known vulnerabilities reported.
+- Gitleaks scan of the public source history: no secrets detected. Two narrowly annotated findings are a standard RFC test vector and a variable serialization expression.
+
+Scans describe the versions and date checked, not a guarantee against undiscovered issues.
+
 ## Automated coverage
 
 Backend tests cover authentication, setup, configuration, temporary SQLite data, queue behavior, scheduler decisions, APIs and WebSocket contracts. FFmpeg tests generate synthetic media. The web build runs TypeScript checks and a production Vite build. Android unit tests and APK compilation run separately from Python. The container build is tested independently.

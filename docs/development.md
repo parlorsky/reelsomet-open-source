@@ -5,7 +5,7 @@ Use Python 3.11+, Node.js 22.12+, FFmpeg/ffprobe, and Git. Commands below run fr
 ```sh
 python3 -m venv .venv
 . .venv/bin/activate
-python -m pip install -r requirements.lock -r requirements-dev.txt
+python -m pip install -r requirements-dev.lock
 python -m pytest -q -ra
 npm ci --prefix web
 npm run build --prefix web
@@ -35,7 +35,7 @@ python -m pip_audit -r requirements.lock
 gitleaks git . --redact
 ```
 
-Python runtime dependencies are resolved with hashes in `requirements.lock`; frontend dependencies are locked in `web/package-lock.json`. The GitHub workflow builds the server tests, web UI, Android app and container. See the workflow result for the actual revision tested.
+Python runtime dependencies are resolved with hashes in `requirements.lock`, and the complete test environment in `requirements-dev.lock`; frontend dependencies are locked in `web/package-lock.json`. The GitHub workflow builds the server tests, web UI, Android app and container. See the workflow result for the actual revision tested.
 
 ## Local data
 

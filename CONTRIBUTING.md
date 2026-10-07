@@ -4,7 +4,7 @@ Start with [the architecture](docs/architecture.md) and [local development](docs
 Small, focused pull requests are welcome: device adapters, queue reliability, accessibility selectors, documentation and tests.
 
 1. Fork the repository and create a topic branch.
-2. Install `requirements.lock` and `requirements-dev.txt`, then use `python -m pip install -e . --no-deps` for editable development. Install the frontend with `npm ci --prefix web`.
+2. Install `requirements-dev.lock`, then use `python -m pip install -e . --no-deps` for editable development. Install the frontend with `npm ci --prefix web`.
 3. Run `python -m pytest` and `npm run build --prefix web`.
 4. For Android changes, run `cd android && ./gradlew testDebugUnitTest assembleDebug`.
 5. Describe the behavior, your validation and any device/app versions you tested.
